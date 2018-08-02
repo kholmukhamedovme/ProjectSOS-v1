@@ -45,8 +45,7 @@ public class HuamiConst {
 
 
     public static final String MI_BAND2_NAME = "MI Band 2";
-    public static final String MI_BAND2_NAME_HRX = "Mi Band HRX";
-    public static final String MI_BAND3_NAME = "Mi Band 3";
+    public static final String MI_BAND2_NAME_CUSTOMIZED = "smartband";
 
     public static int toActivityKind(int rawType) {
         switch (rawType) {

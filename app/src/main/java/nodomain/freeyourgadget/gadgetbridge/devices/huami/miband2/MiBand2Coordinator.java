@@ -51,7 +51,8 @@ public class MiBand2Coordinator extends HuamiCoordinator {
         try {
             BluetoothDevice device = candidate.getDevice();
             String name = device.getName();
-            if (name != null && name.equalsIgnoreCase(HuamiConst.MI_BAND2_NAME)) {
+            if (name != null && (name.equalsIgnoreCase(HuamiConst.MI_BAND2_NAME)
+                    || name.equalsIgnoreCase(HuamiConst.MI_BAND2_NAME_CUSTOMIZED))) {
                 return DeviceType.MIBAND2;
             }
         } catch (Exception ex) {
